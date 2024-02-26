@@ -1,0 +1,28 @@
+.LayoutContainer {
+  width: 100%;
+  max-width: 1440px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin: auto;
+  padding: 20px 40px 0 40px;
+
+  .ImageColumn {
+    width: 100%;
+
+    .imageContainer {
+      width: 100%;
+      margin-bottom: 16px;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .LayoutContainer {
+    padding: 20px 20px 0;
+  }
+}
