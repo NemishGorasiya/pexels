@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import ImageLayoutGrid from "./ImageLayoutGrid";
 import "./ImagesLayout.scss";
 
-const ImagesLayout = ({ imageData, fetchImages }) => {
+const ImagesLayout = ({ imageData, fetchImages, hasMore }) => {
   const [isTwoColumn, setIsTwoColumn] = useState(window.innerWidth <= 900);
   let arr1 = [];
   let arr2 = [];
@@ -72,6 +72,7 @@ const ImagesLayout = ({ imageData, fetchImages }) => {
       arr3={arr3}
       isTwoColumn={isTwoColumn}
       fetchImages={fetchImages}
+      hasMore={hasMore}
     />
   );
 };

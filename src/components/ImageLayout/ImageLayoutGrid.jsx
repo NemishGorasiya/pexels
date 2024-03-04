@@ -3,12 +3,19 @@ import "./ImagesLayout.scss";
 import { Audio } from "react-loader-spinner";
 import InfiniteScroll from "react-infinite-scroll-component";
 import ImageColumn from "./ImageColumn";
-const ImageLayoutGrid = ({ arr1, arr2, arr3, isTwoColumn, fetchImages }) => {
+const ImageLayoutGrid = ({
+  arr1,
+  arr2,
+  arr3,
+  isTwoColumn,
+  fetchImages,
+  hasMore,
+}) => {
   return (
     <InfiniteScroll
       dataLength={arr1.length}
       next={fetchImages}
-      hasMore={true}
+      hasMore={hasMore}
       loader={
         <div
           className="loader"
