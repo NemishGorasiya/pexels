@@ -24,6 +24,8 @@ dist-ssr
 *.sw?
 
 src/API/apiKey.js
+src/assets/recording.mp4
+
 
 
 
